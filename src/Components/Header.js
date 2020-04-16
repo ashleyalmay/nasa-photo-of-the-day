@@ -8,17 +8,18 @@ function Header() {
     useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(response => {
-        console.log(response.data.title);
-        setTopOfPage(response.data.title);
+        setTopOfPage(response.data);
     })
     .catch(error => {
         console.log("the data was not returned",error);
     });
     }, []);
-        console.log(topOfPage);
         return(
             <div className = "topOfPage">
-               <h1>{topOfPage}</h1>
+               <h1>{topOfPage.title}</h1>
+               <h2>By: {topOfPage.copyright}</h2>
+               <h3>{topOfPage.date}</h3>
+
             </div>
             );    
     }

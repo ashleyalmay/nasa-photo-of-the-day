@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import Header from "./Components/Header";
-import "./Components/body";
-import "./Components/footer";
+import Body from "./Components/body";
+import Footer from "./Components/footer";
 
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p> */}
       <Header/>
+      <Body/>
+      <Footer/>
     </div>
   );
 }
