@@ -18,7 +18,7 @@ function Header() {
             <div className = "topOfPage">
                <h1>{topOfPage.title}</h1>
                <h2>By: {topOfPage.copyright}</h2>
-               <h3>{topOfPage.date}</h3>
+               <h3>Date: {topOfPage.date}</h3>
 
             </div>
             );    

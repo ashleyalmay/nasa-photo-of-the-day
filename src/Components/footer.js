@@ -16,8 +16,7 @@ function Footer() {
     }, []);
         return(
             <div className = "bottomOfPage">
-               <p>{bottomOfPage.explanation}</p>
-               
+               <p><strong>Explanation:</strong>  {bottomOfPage.explanation}</p> 
             </div>
             );    
     }
