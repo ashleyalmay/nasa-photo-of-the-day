@@ -6,7 +6,7 @@ import "../App";
 function Body() {
     const [middleOfPage, setMiddleOfPage] = useState ([]);
     useEffect(() => {
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=8uVvpJCe7OSeP3GbMWb2lWoJfpUergbMnFaSfV7O')
     .then(response => {
         setMiddleOfPage(response.data);
     })
